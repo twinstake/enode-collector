@@ -74,7 +74,7 @@ def main():
     response = requests.get(url)
     data = response.json()
 
-    # Extract the bootnodes from the holesky.json file
+    # Extract the bootnodes from the chainspec file
     bootnodes = data.get("nodes", [])
 
     print(f"Bootnodes from chainspec: {bootnodes}")
